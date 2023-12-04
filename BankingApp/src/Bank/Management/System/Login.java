@@ -99,7 +99,7 @@ public class Login extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try{
             if (e.getSource()==button1){
-                 Con c=new Con();
+                 Conn c=new Conn();
                  String Cardno=textField2.getText();
                  String Pin=passwordField3.getText();
                  String q="select * from bankapp.Login where cardno='"+Cardno+"' and pin ='"+Pin+"'";
